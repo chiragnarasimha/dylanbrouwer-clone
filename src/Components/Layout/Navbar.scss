@@ -1,0 +1,21 @@
+@import "../../AppVariables.scss";
+
+.navbar {
+  display: flex;
+  width: 100%;
+  border-bottom: $semi_transparent_white_border;
+  font-size: 2rem;
+  &__logo {
+  }
+  &__section {
+    padding: 3rem 2rem;
+    &__brands {
+      &__twitter {
+      }
+      &__youtube {
+      }
+      &__codepen {
+      }
+    }
+  }
+}
