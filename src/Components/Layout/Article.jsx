@@ -4,15 +4,10 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faPlus,
   faArrowLeftLong,
   faArrowRightLong,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faTwitter,
-  faYoutube,
-  faCodepen,
-  // faDumpsterFire
-} from "@fortawesome/free-brands-svg-icons";
 
 const Article = ({ imgSrc, desc, title }) => {
   return (
@@ -29,6 +24,10 @@ const Article = ({ imgSrc, desc, title }) => {
       <div className="article__section">
         <div className="article__section__title">
           <h2>{title}</h2>
+          <FontAwesomeIcon
+            icon={faPlus}
+            className="article__section__title__font-awesome-icon"
+          />
         </div>
       </div>
       <div className="article__section">

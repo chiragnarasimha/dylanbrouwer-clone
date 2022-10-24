@@ -35,7 +35,7 @@ const Main = () => {
     },
   ];
 
-  const content1 = content[1];
+  const content1 = content[0];
   console.log(content1);
 
   return (

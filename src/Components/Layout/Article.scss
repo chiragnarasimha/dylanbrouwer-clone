@@ -49,6 +49,14 @@
       line-height: 3rem;
       margin: 0px;
       text-transform: uppercase;
+      //   h2 {
+      //     font-size: 7rem;
+      //     font-weight: bold;
+      //   }
+      &__font-awesome-icon {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 4rem;
+      }
     }
 
     &__nav {
@@ -63,6 +71,12 @@
         color: rgba(255, 255, 255, 0.75);
         font-size: 3rem;
         cursor: pointer;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.02);
+        }
+        &:nth-child(2) {
+          border-left: $semi_transparent_white_border;
+        }
       }
     }
   }
