@@ -5,7 +5,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  // Take into account the padding when calculating the elements width and height
+  box-sizing: border-box;
 }
 
 html {
@@ -15,6 +16,15 @@ html {
 }
 
 body {
+  // background-color: $background_color;
+  // display: flex;
+  // flex-direction: column;
+  // height: 100vh;
+  // margin: 0px;
+  // overflow: hidden;
+}
+
+.app_container {
   background-color: $background_color;
   display: flex;
   flex-direction: column;

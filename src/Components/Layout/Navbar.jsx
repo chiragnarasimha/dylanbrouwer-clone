@@ -11,16 +11,28 @@ import {
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div id="navbar__logo-section" className="navbar__section">
+      <div
+        id="navbar__logo-section"
+        className="navbar__section navbar__section-logo"
+      >
         <a href="#">
-          <FontAwesomeIcon className="navbar__logo" icon={faDumpsterFire} />
+          <FontAwesomeIcon
+            className="navbar__section__logo"
+            icon={faDumpsterFire}
+          />
         </a>
       </div>
-      <div id="navbar__link-section" className="navbar__section">
+      <div
+        id="navbar__link-section"
+        className="navbar__section navbar__section-links"
+      >
         <a href="#">ABOUT</a>
         <a href="#">WORK</a>
       </div>
-      <div id="navbar__social-section" className="navbar__section">
+      <div
+        id="navbar__social-section"
+        className="navbar__section navbar__section-social"
+      >
         <a href="#">
           <FontAwesomeIcon
             className="navbar__section__brands navbar__section__brands__twitter"
@@ -40,13 +52,11 @@ const Navbar = () => {
           />
         </a>
       </div>
-      <div id="navbar__contact-section" className="navbar__section">
+      <div
+        id="navbar__contact-section"
+        className="navbar__section navbar__section-contact"
+      >
         <a href="">GET IN TOUCH</a>
-      </div>
-      <div>
-        <FontAwesomeIcon icon={["fab", "apple"]} />
-        <FontAwesomeIcon icon={["fab", "microsoft"]} />
-        <FontAwesomeIcon icon={["fab", "google"]} />
       </div>
     </nav>
   );

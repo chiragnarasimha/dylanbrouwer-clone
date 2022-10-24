@@ -1,0 +1,27 @@
+@import "../../AppVariables.scss";
+.main {
+  flex-grow: 1;
+}
+
+.article {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  &__section {
+    height: 100%;
+    // border: $semi_transparent_white_border;
+    &__description,
+    &__nav {
+      height: 100%;
+      width: 100%;
+      border-left: $semi_transparent_white_border;
+    }
+    &__title,
+    &__nav {
+      height: 100%;
+      width: 100%;
+      border-top: $semi_transparent_white_border;
+    }
+  }
+}
