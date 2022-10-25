@@ -9,9 +9,24 @@ import {
   faArrowRightLong,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Article = ({ imgSrc, desc, title }) => {
+const Article = ({
+  imgSrc,
+  id,
+  desc,
+  title,
+  data_index,
+  data_status,
+  handleLeftClick,
+  handleRightClick,
+  button_error,
+}) => {
   return (
-    <article className="article">
+    <article
+      className="article"
+      id={id}
+      data_index={data_index}
+      data_status={data_status}
+    >
       <div className="article__section">
         <div
           className="article__section__image"
@@ -25,6 +40,7 @@ const Article = ({ imgSrc, desc, title }) => {
         <div className="article__section__title">
           <h2>{title}</h2>
           <FontAwesomeIcon
+            id="FontAwesomeIcon"
             icon={faPlus}
             className="article__section__title__font-awesome-icon"
           />
@@ -33,18 +49,18 @@ const Article = ({ imgSrc, desc, title }) => {
       <div className="article__section">
         <div className="article__section__nav">
           <button
-            class="article-nav-button"
+            // button_error={button_error}
             type="button"
-            onclick="handleLeftClick()"
+            onClick={handleLeftClick}
           >
-            <FontAwesomeIcon icon={faArrowLeftLong} />
+            <FontAwesomeIcon id="FontAwesomeIcon" icon={faArrowLeftLong} />
           </button>
           <button
-            class="article-nav-button"
+            // button_error={button_error}
             type="button"
-            onclick="handleRightClick()"
+            onClick={handleRightClick}
           >
-            <FontAwesomeIcon icon={faArrowRightLong} />
+            <FontAwesomeIcon id="FontAwesomeIcon" icon={faArrowRightLong} />
           </button>
         </div>
       </div>
