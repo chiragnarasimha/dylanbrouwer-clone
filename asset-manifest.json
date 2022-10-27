@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dylanbrouwer-clone/static/css/main.550e6aef.css",
+    "main.js": "/dylanbrouwer-clone/static/js/main.b31b41ef.js",
+    "static/media/logo.svg": "/dylanbrouwer-clone/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/dylanbrouwer-clone/index.html",
+    "main.550e6aef.css.map": "/dylanbrouwer-clone/static/css/main.550e6aef.css.map",
+    "main.b31b41ef.js.map": "/dylanbrouwer-clone/static/js/main.b31b41ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.550e6aef.css",
+    "static/js/main.b31b41ef.js"
+  ]
+}
